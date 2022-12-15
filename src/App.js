@@ -1,39 +1,38 @@
 import React from 'react';
+import SearchButton from './SearchButton';
+import NavSection from './NavSection';
+import Section from './Section';
+import ListPatient from './ListPatient';
+import SideBar from './SideBar';
+import Pagination from './Pagination';
 import {
   ChakraProvider,
   Box,
-  Text,
-  Link,
-  VStack,
-  Code,
   Grid,
   theme,
+  GridItem,
+  SimpleGrid,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
-          </VStack>
-        </Grid>
+      <Box textAlign="center" fontSize="xl" m={5} >
+        <SimpleGrid columns={10}>
+          <SideBar />
+
+          <Grid>
+            <ColorModeSwitcher justifySelf="flex-end" />
+
+            <SearchButton  />
+
+            <NavSection />
+            <Section />
+            <ListPatient />
+          </Grid>
+         
+        </SimpleGrid>
       </Box>
     </ChakraProvider>
   );
