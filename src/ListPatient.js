@@ -15,7 +15,11 @@ import {
 
 function ListPatient() {
   return (
-    <TableContainer ml={-20}>
+    <TableContainer ml={{sm: '0.2em',
+    md: '3em',
+    lg: '0.4em',
+    xl: '0.4em',
+    '2xl': '0.1em',}}>
       <Table size="lg">
         <Thead>
           <Tr>

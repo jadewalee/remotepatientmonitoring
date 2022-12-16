@@ -1,16 +1,9 @@
 import React, { useState } from 'react';
 import {
   Flex,
-  Text,
-  IconButton,
-  Divider,
-  Avatar,
-  Heading,
 } from '@chakra-ui/react';
 import {
-  FiMenu,
   FiHome,
-  FiCalendar,
   FiUser,
   FiSettings,
   FiHelpCircle,
