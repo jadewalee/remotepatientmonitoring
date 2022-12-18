@@ -1,0 +1,239 @@
+import React from 'react';
+import {
+  Table,
+  TableContainer,
+  Tr,
+  Thead,
+  Td,
+  Tfoot,
+  Th,
+  Tbody,
+  CheckboxGroup,
+  Checkbox,
+  Select,
+} from '@chakra-ui/react';
+
+function Patient() {
+  return (
+    <TableContainer ml={{sm: '0.2em',
+    md: '3em',
+    lg: '0.4em',
+    xl: '0.4em',
+    '2xl': '0.1em',}}>
+      <Table size="lg">
+        <Thead>
+          <Tr>
+            <Th>
+              <Select variant="unstyled" placeholder="Patient" />
+            </Th>
+            <Th>
+              <Select variant="unstyled" placeholder="Physician" />
+            </Th>
+            <Th isNumeric>
+              <Select variant="unstyled" placeholder="Days" />
+            </Th>
+            <Th>
+              <Select variant="unstyled" placeholder="Contact" />
+            </Th>
+            <Th isNumeric>
+              <Select variant="unstyled" placeholder="Minutes" />
+            </Th>
+            <Th isNumeric>
+              <Select variant="unstyled" placeholder="BP" />
+            </Th>
+            <Th isNumeric>
+              <Select variant="unstyled" placeholder="Pulse" />
+            </Th>
+            <Th isNumeric>
+              <Select variant="unstyled" placeholder="Weight" />
+            </Th>
+            <Th isNumeric>
+              <Select variant="unstyled" placeholder="Glucose" />
+            </Th>
+            <Th isNumeric>
+              <Select variant="unstyled" placeholder="REVIEW" />
+            </Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          <CheckboxGroup colorScheme="blue">
+            <Tr>
+              <Td>
+                <Checkbox mr={5} />
+                  inches
+              <Td>0303098477</Td>
+              </Td>
+
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Checkbox size="lg" p={10} />
+            </Tr>
+            <Tr>
+              <Td>
+                {' '}
+                <Checkbox mr={5} />
+                feet
+              </Td>
+
+              <Td>centimetres (cm)</Td>
+              <Td isNumeric>30.48</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Checkbox size="lg" p={10} />
+            </Tr>
+            <Tr>
+              <Td>
+                {' '}
+                <Checkbox mr={5} />
+                yards
+              </Td>
+
+              <Td>metres (m)</Td>
+              <Td isNumeric>0.91444</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Checkbox size="lg" p={10} />
+            </Tr>
+            <Tr>
+              <Td>
+                {' '}
+                <Checkbox mr={5} />
+                inches
+              </Td>
+
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Checkbox size="lg" p={10} />
+            </Tr>
+            <Tr>
+              <Td>
+                {' '}
+                <Checkbox mr={5} />
+                inches
+              </Td>
+
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Checkbox size="lg" p={10} />
+            </Tr>
+            <Tr>
+              <Td>
+                {' '}
+                <Checkbox mr={5} />
+                inches
+              </Td>
+
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Checkbox size="lg" p={10} />
+            </Tr>
+            <Tr>
+              <Td>
+                {' '}
+                <Checkbox mr={5} />
+                inches
+              </Td>
+
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Checkbox size="lg" p={10} />
+            </Tr>
+            <Tr>
+              <Td>
+                {' '}
+                <Checkbox mr={5} />
+                inches
+              </Td>
+
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Checkbox size="lg" p={10} />
+            </Tr>
+            <Tr>
+              <Td>
+                {' '}
+                <Checkbox mr={5} />
+                inches
+              </Td>
+
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Checkbox size="lg" p={10} />
+            </Tr>
+            <Tr>
+              <Td>
+                {' '}
+                <Checkbox mr={5} />
+                inches
+              </Td>
+
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Td>inches</Td>
+              <Td>millimetres (mm)</Td>
+              <Td isNumeric>25.4</Td>
+              <Checkbox size="lg" p={10} />
+            </Tr>
+          </CheckboxGroup>
+        </Tbody>
+
+        <Tfoot></Tfoot>
+      </Table>
+    </TableContainer>
+  );
+}
+
+export default Patient;
