@@ -1,4 +1,4 @@
-import { React } from 'react';
+import { React, useState } from 'react';
 import {
   Input,
   InputGroup,
@@ -12,8 +12,11 @@ import {
 import { SearchIcon, AddIcon, CalendarIcon } from '@chakra-ui/icons';
 
 
-
 function PatientTab() {
+
+  const [dateRange, setDateRange] = useState([null, null]);
+  const [startDate, endDate] = dateRange;
+
   return (
     <div >
       <Breadcrumb separator="" m={10}>
@@ -28,7 +31,7 @@ function PatientTab() {
         <div>
           <BreadcrumbItem ml={100}>
             <BreadcrumbLink href="#">
-              <CalendarIcon /> Set Expected DoD
+              <CalendarIcon />  Set Expected DoD
             </BreadcrumbLink>
           </BreadcrumbItem>
 
